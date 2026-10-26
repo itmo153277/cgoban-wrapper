@@ -1,14 +1,19 @@
 package ru.viktprog.cgoban_wrapper.dbus;
 
-import lombok.extern.slf4j.Slf4j;
+import ru.viktprog.cgoban_wrapper.CGoban;
 
-@Slf4j
 public class MDIAppImpl implements MDIApp {
     public static final String OBJECT_PATH = "/ru/viktprog/cgoban_wrapper/MDIApp";
 
+    private CGoban app;
+
+    public MDIAppImpl(String jarLocation) {
+        app = new CGoban(jarLocation);
+    }
+
     @Override
     public void openFile(String arg) {
-        log.info("Open file: {}", arg);
+        app.openFile(arg);
     }
 
     @Override
