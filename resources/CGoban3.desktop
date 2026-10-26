@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Exec=cgoban.sh %F
+Icon=cgoban3
+Hidden=false
+NoDisplay=false
+Name=CGoban 3
+Comment=CGoban 3 can connect to the KGS go server and can view and edit SGF (go game record) files.
+Terminal=false
+StartupNotify=true
+SingleMainWindow=true
+StartupWMClass=ru-viktprog-cgoban_wrapper-App
+MimeType=application/x-go-sgf
